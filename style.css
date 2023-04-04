@@ -9,9 +9,18 @@
 body {
   background-color: rosybrown;
   font-size: 18px;
+  margin: auto 0;
+}
+body header {
+  background-image: url(./asset/mobile/image-header.jpg);
 }
 body header .le_haut {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+body header .le_haut .logo {
+  width: 140px;
+}
+body header .le_haut .texte_header {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
