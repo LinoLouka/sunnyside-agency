@@ -1,32 +1,154 @@
+*{
+    margin: 0;
+}
+
 @font-face {
-    font-family: "Barlow";
+    font-family: "Barlow"; //texte
     src: url(./asset/font/Barlow-Regular.ttf);
 }
 @font-face {
-    font-family: "Fraunces";
+    font-family: "Fraunces"; //titre
     src: url(./asset/font/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
 
 body{
-    background-color: rosybrown;
+    // background-color: rosybrown;
     font-size: 18px;
-    margin: auto 0;
+    margin: auto ;
     header{
+        width: auto;
+        height: 500px;
         background-image: url(./asset/mobile/image-header.jpg);
-        .le_haut{
-            display: flex;
-            flex-direction: column;
-            // justify-content: space-between;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .le_haut{ 
+            display: flex;  
+            justify-content: space-between;             
             .logo{
-                width: 140px;
+                width: 123px;
+                height: 28px;
+                padding: 10px;
             }
-            .texte_header{
-            color: white;
+            .menu_titre{
+                padding: 10px;
             }
-            .fleche_header{
+        }
+        .container_header{
+            margin: 10px 100px 0px 100px;
+            text-align: center;
+            h1{
+                text-transform: uppercase;
+                color: white;
+                font-size: 30px;
+                padding-bottom: 100px;
+                padding-top: 50px;
+            }
+        }
+    }
+    main{
+        .texte_transform{
+            .oeuf_image{
                 img{
+                max-width: 100%;
+                padding-bottom: 40px;
                 }
-            }   
+            }
+            .oeuf_text{
+                text-align: center;
+                h2{
+                    font-family: Fraunces;
+                    font-size: 35px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-family: Barlow;
+                    padding-bottom: 30px;
+                }
+                a{
+                    font-family: Fraunces;
+                }
+            }
+        }
+        .stand_out{
+            .tasse_rouge_image{
+                img{
+                max-width: 100%;
+                padding-bottom: 40px;
+                }
+            }
+            .tasse_rouge_text{
+                text-align: center;
+                h2{
+                    font-family: Fraunces;
+                    font-size: 35px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-family: Barlow;
+                    padding-bottom: 30px;
+                }
+                a{
+                    font-family: Fraunces;
+                }
+            }
+        }
+        .cherry{
+            height: 600px;
+            .cherry_image{
+                img{
+                    max-width: 100%;
+                }
+            }
+            .cherry_text{
+                position: relative;
+                top: -200px;
+                text-align: center;
+                h2{
+                    text-transform: capitalize;
+                    font-family: Fraunces;
+                    font-size: 35px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-family: Barlow;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+        .orange{
+            height: 600px;
+            .orange_image{
+                img{
+                    max-width: 100%;
+                }
+            }
+            .orange_text{
+                position: relative;
+                top: -200px;
+                text-align: center;
+                h2{
+                    text-transform: capitalize;
+                    font-family: Fraunces;
+                    font-size: 35px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-family: Barlow;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+        .client{
+            h3{
+                text-align: center;
+                text-transform: capitalize;
+                font-family: Fraunces;
+                color: hsl(210, 4%, 67%);
+                font-size: 20px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
         }
     }
 }
