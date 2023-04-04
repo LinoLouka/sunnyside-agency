@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Barlow";
+  src: url(./asset/font/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url(./asset/font/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+body {
+  background-color: rosybrown;
+  font-size: 18px;
+}
+body header .le_haut {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
