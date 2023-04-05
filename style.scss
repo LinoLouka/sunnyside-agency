@@ -11,11 +11,6 @@
     src: url(./asset/font/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
 
-// @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100&display=swap');
-
-// @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-
-
 body{
     background: #F2F2F2;
     font-size: 18px;
@@ -53,20 +48,27 @@ body{
         }
     }
     main{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 6;
         letter-spacing: -0.128571px;
         text-align: center;
         .texte_transform{
             .oeuf_image{
+                grid-column: 1;
+                grid-row: 1;
                 img{
                 max-width: 100%;
                 padding-bottom: 40px;
                 }
             }
             .oeuf_text{
+                grid-column: 1;
+                grid-row: 2;
                 padding: 0px 24px 64px 24px;
                 h2{
                     font-family: Fraunces;
-                    font-size: 35px;font-style: normal;
+                    font-size: 32px;font-style: normal;
                     padding-bottom: 30px;
                 }
                 p{
@@ -80,21 +82,41 @@ body{
                     font-family: Fraunces;
                     color: #24303E;
                     text-decoration: none;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 15px;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                }
+                .rectangle1{
+                    position: relative;
+                    right: -104px;
+                    top: -10px;
+                    background-color: #FE7766;
+                    opacity: 0.25;
+                    border-radius: 28px;
+                    height: 10px;
+                    width: 118px;
+                    opacity: 25%;
                 }
             }
         }
         .stand_out{
             .tasse_rouge_image{
+                grid-column: 1;
+                grid-row: 3;
                 img{
                 max-width: 100%;
                 padding-bottom: 40px;
                 }
             }
             .tasse_rouge_text{
+                grid-column: 1;
+                grid-row: 4;
                 padding: 0px 24px 64px 24px;
                 h2{
                     font-family: Fraunces;
-                    font-size: 35px;
+                    font-size: 32px;
                     padding-bottom: 30px;
                 }
                 p{
@@ -107,26 +129,40 @@ body{
                 a{
                     font-family: Fraunces;
                     color: #24303E;
-                    
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 15px;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                }
+                .rectangle2{
+                    position: relative;
+                    right: -104px;
+                    top: -10px;
+                    background-color: #FE7766;
+                    opacity: 0.25;
+                    border-radius: 28px;
+                    height: 10px;
+                    width: 118px;
+                    opacity: 25%;
                 }
             }
         }
         .cherry{
+            grid-column: 1;
+            grid-row: 5;
+            background-image: url(./asset/mobile/image-graphic-design.jpg);
+            background-position: center;
+            background-size: cover;
             height: 600px;
-            .cherry_image{
-                img{
-                    max-width: 100%;
-                }
-            }
             .cherry_text{
-                position: relative;
-                top: -200px;
-                text-align: center;
+                transform: translateY(365px);
                 h2{
                     text-transform: capitalize;
                     font-family: Fraunces;
-                    font-size: 35px;
-                    color: #24554A;;
+                    font-size: 28px;
+                    color: #24554A;
                 }
                 p{
                     font-family: Barlow;
@@ -139,19 +175,19 @@ body{
             }
         }
         .orange{
+            grid-column: 1;
+            grid-row: 6;
+            background-image: url(./asset/mobile/image-photography.jpg);
+            background-position: center;
+            background-size: cover;
             height: 600px;
-            .orange_image{
-                img{
-                    max-width: 100%;
-                }
             }
             .orange_text{
-                position: relative;
-                top: -200px;
+                transform: translateY(365px);
                 h2{
                     text-transform: capitalize;
                     font-family: Fraunces;
-                    font-size: 35px;
+                    font-size: 28px;
                     color: #052C3B;
                     mix-blend-mode: normal;
                     opacity: 0.75;
@@ -166,7 +202,10 @@ body{
                 }
             }
         }
+    }
         .client{
+            letter-spacing: -0.128571px;
+            text-align: center;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat 4(1fr);
@@ -274,7 +313,6 @@ body{
                 grid-row: 2;
             }
         }
-    }
     footer{
         letter-spacing: -0.128571px;
         background: #90D4C6;
@@ -301,4 +339,3 @@ body{
             padding-bottom: 40px;
         }
     }
-}

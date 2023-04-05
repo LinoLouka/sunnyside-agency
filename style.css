@@ -48,19 +48,28 @@ body header .container_header h1 {
   padding-top: 50px;
 }
 body main {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 6;
   letter-spacing: -0.128571px;
   text-align: center;
+}
+body main .texte_transform .oeuf_image {
+  grid-column: 1;
+  grid-row: 1;
 }
 body main .texte_transform .oeuf_image img {
   max-width: 100%;
   padding-bottom: 40px;
 }
 body main .texte_transform .oeuf_text {
+  grid-column: 1;
+  grid-row: 2;
   padding: 0px 24px 64px 24px;
 }
 body main .texte_transform .oeuf_text h2 {
   font-family: Fraunces;
-  font-size: 35px;
+  font-size: 32px;
   font-style: normal;
   padding-bottom: 30px;
 }
@@ -75,17 +84,39 @@ body main .texte_transform .oeuf_text a {
   font-family: Fraunces;
   color: #24303E;
   text-decoration: none;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+body main .texte_transform .oeuf_text .rectangle1 {
+  position: relative;
+  right: -104px;
+  top: -10px;
+  background-color: #FE7766;
+  opacity: 0.25;
+  border-radius: 28px;
+  height: 10px;
+  width: 118px;
+  opacity: 25%;
+}
+body main .stand_out .tasse_rouge_image {
+  grid-column: 1;
+  grid-row: 3;
 }
 body main .stand_out .tasse_rouge_image img {
   max-width: 100%;
   padding-bottom: 40px;
 }
 body main .stand_out .tasse_rouge_text {
+  grid-column: 1;
+  grid-row: 4;
   padding: 0px 24px 64px 24px;
 }
 body main .stand_out .tasse_rouge_text h2 {
   font-family: Fraunces;
-  font-size: 35px;
+  font-size: 32px;
   padding-bottom: 30px;
 }
 body main .stand_out .tasse_rouge_text p {
@@ -98,22 +129,39 @@ body main .stand_out .tasse_rouge_text p {
 body main .stand_out .tasse_rouge_text a {
   font-family: Fraunces;
   color: #24303E;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+body main .stand_out .tasse_rouge_text .rectangle2 {
+  position: relative;
+  right: -104px;
+  top: -10px;
+  background-color: #FE7766;
+  opacity: 0.25;
+  border-radius: 28px;
+  height: 10px;
+  width: 118px;
+  opacity: 25%;
 }
 body main .cherry {
+  grid-column: 1;
+  grid-row: 5;
+  background-image: url(./asset/mobile/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
   height: 600px;
 }
-body main .cherry .cherry_image img {
-  max-width: 100%;
-}
 body main .cherry .cherry_text {
-  position: relative;
-  top: -200px;
-  text-align: center;
+  transform: translateY(365px);
 }
 body main .cherry .cherry_text h2 {
   text-transform: capitalize;
   font-family: Fraunces;
-  font-size: 35px;
+  font-size: 28px;
   color: #24554A;
 }
 body main .cherry .cherry_text p {
@@ -125,24 +173,25 @@ body main .cherry .cherry_text p {
   font-size: 16px;
 }
 body main .orange {
+  grid-column: 1;
+  grid-row: 6;
+  background-image: url(./asset/mobile/image-photography.jpg);
+  background-position: center;
+  background-size: cover;
   height: 600px;
 }
-body main .orange .orange_image img {
-  max-width: 100%;
+body main .orange_text {
+  transform: translateY(365px);
 }
-body main .orange .orange_text {
-  position: relative;
-  top: -200px;
-}
-body main .orange .orange_text h2 {
+body main .orange_text h2 {
   text-transform: capitalize;
   font-family: Fraunces;
-  font-size: 35px;
+  font-size: 28px;
   color: #052C3B;
   mix-blend-mode: normal;
   opacity: 0.75;
 }
-body main .orange .orange_text p {
+body main .orange_text p {
   font-family: Barlow;
   padding: 30px 24px 59px 24px;
   font-size: 16px;
@@ -150,7 +199,10 @@ body main .orange .orange_text p {
   line-height: 27px;
   color: rgb(25, 83, 108);
 }
-body main .client {
+
+.client {
+  letter-spacing: -0.128571px;
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat 4 1fr;
@@ -158,12 +210,12 @@ body main .client {
   letter-spacing: -0.1285714358px;
   font-family: Barlow;
 }
-body main .client img {
+.client img {
   border-radius: 100%;
   width: 72px;
   height: 72px;
 }
-body main .client h3 {
+.client h3 {
   grid-row: 1;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -173,116 +225,118 @@ body main .client h3 {
   padding-bottom: 64px;
   padding-top: 64px;
 }
-body main .client .emily {
+.client .emily {
   grid-column: 1;
   grid-row: 2;
 }
-body main .client .emily .dia_emily {
+.client .emily .dia_emily {
   font-weight: 600;
   line-height: 32px;
   color: #5B636D;
   padding: 32px 24px 32px 24px;
 }
-body main .client .emily .nom_e {
+.client .emily .nom_e {
   font-family: Fraunces;
   font-weight: 900;
   line-height: 22px;
 }
-body main .client .emily .poste_e {
+.client .emily .poste_e {
   font-size: 14px;
   color: rgb(167, 170, 173);
   padding-top: 9px;
   padding-bottom: 64px;
 }
-body main .client .thomas {
+.client .thomas {
   grid-column: 1;
   grid-row: 3;
 }
-body main .client .thomas .dia_thomas {
+.client .thomas .dia_thomas {
   font-weight: 600;
   line-height: 32px;
   color: #5B636D;
   padding: 32px 24px 32px 24px;
 }
-body main .client .thomas .nom_t {
+.client .thomas .nom_t {
   font-family: Fraunces;
   font-weight: 900;
   line-height: 22px;
 }
-body main .client .thomas .poste_t {
+.client .thomas .poste_t {
   font-size: 14px;
   color: #A7AAAD;
   padding-top: 9px;
   padding-bottom: 64px;
 }
-body main .client .jennie {
+.client .jennie {
   grid-column: 1;
   grid-row: 4;
 }
-body main .client .jennie .dia_jennie {
+.client .jennie .dia_jennie {
   font-weight: 600;
   line-height: 32px;
   color: #5B636D;
   padding: 32px 24px 32px 24px;
 }
-body main .client .jennie .nom_j {
+.client .jennie .nom_j {
   font-family: Fraunces;
   font-weight: 900;
   line-height: 22px;
 }
-body main .client .jennie .poste_j {
+.client .jennie .poste_j {
   font-size: 14px;
   color: #A7AAAD;
   padding-top: 9px;
   padding-bottom: 64px;
 }
-body main .gallery {
+
+.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-body main .gallery img {
+.gallery img {
   max-width: 100%;
 }
-body main .gallery .image1 {
+.gallery .image1 {
   grid-column: 1;
   grid-row: 1;
 }
-body main .gallery .image2 {
+.gallery .image2 {
   grid-column: 1;
   grid-row: 2;
 }
-body main .gallery .image3 {
+.gallery .image3 {
   grid-column: 2;
   grid-row: 1;
 }
-body main .gallery .image4 {
+.gallery .image4 {
   grid-column: 2;
   grid-row: 2;
 }
-body footer {
+
+footer {
   letter-spacing: -0.128571px;
   background: #90D4C6;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body footer .titre_bot {
+footer .titre_bot {
   padding-top: 20px;
   padding-bottom: 40px;
   width: 170px;
   filter: invert(26%) sepia(9%) saturate(2406%) hue-rotate(116deg) brightness(50%) contrast(90%);
 }
-body footer .liens {
+footer .liens {
   word-spacing: 57px;
   padding-bottom: 40px;
 }
-body footer .liens a {
+footer .liens a {
   text-decoration: none;
   color: rgb(69, 141, 126);
   font-family: Barlow;
 }
-body footer .social {
+footer .social {
   word-spacing: 28px;
   padding-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
